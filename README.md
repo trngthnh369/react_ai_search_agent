@@ -28,7 +28,7 @@ Một hệ thống AI Search Agent thông minh sử dụng ReAct (Reasoning + Ac
 
 ### 1. Clone repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/trngthnh369/react_ai_search_agent.git
 cd react-ai-search-agent
 ```
 
