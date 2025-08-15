@@ -1,0 +1,68 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Main Interactive",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["interactive"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Run Quick Test",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_agent.py",
+            "args": ["quick"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Debug Single Query",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_agent.py",
+            "args": ["test", "Thời tiết Hà Nội hôm nay?"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "stopOnEntry": false,
+            "debugOptions": [
+                "RedirectOutput"
+            ]
+        },
+        {
+            "name": "Debug Mode",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_agent.py",
+            "args": ["debug"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Test Tools Only",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}
